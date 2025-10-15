@@ -1,0 +1,32 @@
+body{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: beige;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragraph{
+  margin: 2px;
+  color: #767676;
+  text-transform: uppercase;
+  padding: 2px;
+}
+
+.heading{
+color: #424141;
+font-size: 18px;
+padding: 2px;
+}
+
+.userContainer{
+  border: 2px solid black;
+  width: 400px;
+  height: 10vh;
+  border-radius: 8px;
+  margin: 15px;
+  margin-left: 90px;
+  text-align: left;
+  background-color: beige;
+  padding: 2px;
+}
