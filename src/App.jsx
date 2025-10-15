@@ -23,10 +23,20 @@ function App() {
     //   <User userInfo={userData} />
     // </div>
     // <Task2 />
-    <Card firstName="Maria" lastName="Miles" />
+    <Card firstName="Maria" lastName="Miles">
+          
+        <p className="card-text paragraph">
+       Maria is a professor of Computer Science at the Univercity of
+        Illinois.
+      </p>
+      <p>
+        <a href="mailto:blake@example.com" className="link">
+          Email Maria
+        </a>
+      </p>
+
+    </Card>
   );
 }
 
 export default App;
-
-
