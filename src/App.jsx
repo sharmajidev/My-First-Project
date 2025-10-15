@@ -2,6 +2,7 @@ import Heading from "./Components/Heading";
 import Task2 from "./Components/task2/task2";
 import "./app.css";
 import User from "./Components/User";
+import Card from "./Components/Card";
 
 function App() {
   // let userData = {
@@ -21,8 +22,11 @@ function App() {
     //   <Heading />
     //   <User userInfo={userData} />
     // </div>
-    <Task2 />
+    // <Task2 />
+    <Card firstName="Maria" lastName="Miles" />
   );
 }
 
 export default App;
+
+

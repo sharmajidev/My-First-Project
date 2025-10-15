@@ -2,11 +2,11 @@ body{
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: beige;
+  background-color: rgb(233, 233, 237);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.paragraph{
+/* .paragraph{
   margin: 2px;
   color: #767676;
   text-transform: uppercase;
@@ -29,4 +29,22 @@ padding: 2px;
   text-align: left;
   background-color: beige;
   padding: 2px;
+} */
+
+.cardContainer{
+  margin: 50px auto;
+  background-color:#026060;
+}
+
+.heading{
+  color: white;
+}
+
+.paragraph{
+  color: #dddbdb;
+}
+
+.link{
+  color: #99de99;
+  text-decoration: none;
 }
