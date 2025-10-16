@@ -3,13 +3,18 @@ import Task2 from "./Components/task2/task2";
 import "./app.css";
 import User from "./Components/User";
 import Card from "./Components/Card";
+import LoginPage from "./Components/LoginPage";
+
 
 function App() {
+  let firstName = "Maria"
+  let lastName = "Miles"
   // let userData = {
   //   firstName: "JOHN",
   //   lastName: "DOE",
   //   title: "INSTRUCTOR",
   // };
+
   return (
     // <div
     //   style={{
@@ -23,19 +28,22 @@ function App() {
     //   <User userInfo={userData} />
     // </div>
     // <Task2 />
-    <Card firstName="Maria" lastName="Miles">
+    // <Card firstName={firstName} lastName={lastName}>
           
-        <p className="card-text paragraph">
-       Maria is a professor of Computer Science at the Univercity of
-        Illinois.
-      </p>
-      <p>
-        <a href="mailto:blake@example.com" className="link">
-          Email Maria
-        </a>
-      </p>
+    //     <p className="card-text paragraph">
+    //    {firstName} is a professor of Computer Science at the Univercity of
+    //     Illinois.
+    //   </p>
+    //   <p>
+    //     <a href="mailto:blake@example.com" className="link">
+    //       Email Maria
+    //     </a>
+    //   </p>
 
-    </Card>
+    // </Card>
+
+    <LoginPage />
+    
   );
 }
 

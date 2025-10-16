@@ -2,7 +2,7 @@ body{
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: rgb(233, 233, 237);
+  background-color: rgb(42, 42, 138);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -31,7 +31,7 @@ padding: 2px;
   padding: 2px;
 } */
 
-.cardContainer{
+/* .cardContainer{
   margin: 50px auto;
   background-color:#026060;
 }
@@ -47,4 +47,40 @@ padding: 2px;
 .link{
   color: #99de99;
   text-decoration: none;
+} */
+
+.login-container{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color:lightblue;
+  width: 450px;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 100px;
+  padding: 15px;
+}
+
+.email-container{
+  display: flex;
+  padding: 3px;
+  margin: 5px;
+}
+
+.password-container{
+  display: flex;
+  padding: 3px;
+  margin: 5px;
+}
+
+input{
+  width: 100%;
+}
+
+.loginBtn{
+  width: 100%;
+  margin: 10px;
+  margin-left: 2px;
+  padding: 8px;
 }
