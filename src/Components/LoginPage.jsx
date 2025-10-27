@@ -1,10 +1,10 @@
 import { useState } from "react";
-
 const user = {
-  email: "abcd123@gmail.com",
-  password: "12345",
+  email: " ",
+  password: " ",
   loggedIn: false,
 };
+
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -52,7 +52,7 @@ const LoginPage = () => {
           placeholder="Enter your Email"
           value={email}
           onChange={handleInputEmail}
-          className="email-container"
+          className="form-container"
           required
         />
       </div>
@@ -66,7 +66,7 @@ const LoginPage = () => {
           placeholder="Enter your Password"
           onChange={handleInputPassword}
           value={password}
-          className="password-container"
+          className="form-container"
           required
         />
       </div>
@@ -76,6 +76,8 @@ const LoginPage = () => {
           Log In
         </button>
       </div>
+
+  
     </div>
   );
 };

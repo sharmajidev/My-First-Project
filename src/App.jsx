@@ -4,9 +4,13 @@ import "./app.css";
 import User from "./Components/User";
 import Card from "./Components/Card";
 import LoginPage from "./Components/LoginPage";
+import { useState } from "react";
+import Delete from "./Components/task3/Delete";
+import Warning from "./Components/task3/Warning";
 
 
 function App() {
+  const [deleteContent, setDeleteContent] = useState(false)
   let firstName = "Maria"
   let lastName = "Miles"
   // let userData = {
@@ -15,7 +19,14 @@ function App() {
   //   title: "INSTRUCTOR",
   // };
 
+  // const [price , setPrice] = useState( "$ 100");
+
+  // const handleButton = () => {
+  //   setPrice("$ 75");
+  // }
+
   return (
+   
     // <div
     //   style={{
 
@@ -42,9 +53,18 @@ function App() {
 
     // </Card>
 
-    <LoginPage />
-    
+    // <LoginPage />
+
+    // <div>
+    //   <h1>Product Price: {price} </h1>
+    //   <button onClick={handleButton}>Apply Discount</button>
+    // </div>
+    <>
+    {deleteContent ? <Warning setDeleteContent={setDeleteContent} /> : <Delete setDeleteContent={setDeleteContent}/>}
+    </>
+   
   );
+   
 }
 
 export default App;
