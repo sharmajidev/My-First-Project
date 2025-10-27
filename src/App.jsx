@@ -10,9 +10,11 @@ import Warning from "./Components/task3/Warning";
 
 
 function App() {
-  const [deleteContent, setDeleteContent] = useState(false)
-  let firstName = "Maria"
-  let lastName = "Miles"
+ 
+   
+  // const [deleteContent, setDeleteContent] = useState(false)
+  // let firstName = "Maria"
+  // let lastName = "Miles"
   // let userData = {
   //   firstName: "JOHN",
   //   lastName: "DOE",
@@ -25,7 +27,18 @@ function App() {
   //   setPrice("$ 75");
   // }
 
+  const [isActive, setIsActive] = useState(false);
+
+ const handleClick = () => {
+    setIsActive(true);
+  }
+
   return (
+
+    <div className="style-container">
+        <h1 className = {isActive ? "active" : ""}>Style Me!</h1>
+      <button className="style-btn" onClick={handleClick}>Toggle Style</button>
+    </div>
    
     // <div
     //   style={{
@@ -59,10 +72,10 @@ function App() {
     //   <h1>Product Price: {price} </h1>
     //   <button onClick={handleButton}>Apply Discount</button>
     // </div>
-    <>
-    {deleteContent ? <Warning setDeleteContent={setDeleteContent} /> : <Delete setDeleteContent={setDeleteContent}/>}
-    </>
-   
+   // <>
+    //{/* {deleteContent ? <Warning setDeleteContent={setDeleteContent} /> : <Delete setDeleteContent={setDeleteContent}/>} */}
+   // </>
+
   );
    
 }

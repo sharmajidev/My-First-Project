@@ -14,3 +14,27 @@ h1{
   color: #bbb6b6;
   padding: 2px;
 } */
+
+.style-container{
+  margin-top: 200px;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: 50px;
+}
+
+.active{
+  color: red;
+}
+
+.style-btn{
+  width: 140px;
+  padding: 4px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid black;
+  margin-top: 50px;
+}
