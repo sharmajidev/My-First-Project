@@ -7,6 +7,7 @@ import LoginPage from "./Components/LoginPage";
 import { useState } from "react";
 import Delete from "./Components/task3/Delete";
 import Warning from "./Components/task3/Warning";
+import Todo from "./Components/task4/Todo";
 
 
 function App() {
@@ -27,18 +28,30 @@ function App() {
   //   setPrice("$ 75");
   // }
 
-  const [isActive, setIsActive] = useState(false);
+//   const [isActive, setIsActive] = useState(false);
 
- const handleClick = () => {
-    setIsActive(true);
-  }
+//  const handleClick = () => {
+//     setIsActive(true);
+//   }
 
+const DUMMY_TODO =[
+    'Learn React',
+    'Practice React',
+    'Profit!'
+];
   return (
+   <div className="container">
+     <ul>
+      {DUMMY_TODO.map((todo, index) => (
+        <Todo key={index} text={todo}/>
+      ))}
+    </ul>
+   </div>
 
-    <div className="style-container">
-        <h1 className = {isActive ? "active" : ""}>Style Me!</h1>
-      <button className="style-btn" onClick={handleClick}>Toggle Style</button>
-    </div>
+    // <div className="style-container">
+    //     <h1 className = {isActive ? "active" : ""}>Style Me!</h1>
+    //   <button className="style-btn" onClick={handleClick}>Toggle Style</button>
+    // </div>
    
     // <div
     //   style={{
